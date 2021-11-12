@@ -6,7 +6,7 @@ const cart = document.querySelector('.cart');
 const renderCart = (id = -1) => {
   if (Object.keys(cartStorage).length === 0) {
     cart.hidden = true;
-    cartProduct.innerHTML = '';
+    cartProducts.innerHTML = '';
     return;
   }
 
