@@ -12,10 +12,9 @@ function getCookie(name) {
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 
-modal.classList.add('modal_active');
 
-if (getCookie('modalActive')) {
-  modal.classList.remove('modal_active');
+if (!getCookie('modalActive')) {
+  modal.classList.add('modal_active');
 }
 
 closeModal.addEventListener('click', () => {
